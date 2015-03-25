@@ -6,7 +6,8 @@
  */
 
 package learnjava;
-
+import java.util.*;
+import static net.mindview.util.Print.*;
 /**
  * Класс уроков 
  * @author Utkin Sergey
@@ -59,6 +60,8 @@ public class LearnJava {
         
         System.out.println("arg1: " + args[0] + " arg2: " + args[1] + " arg3: " + args[2]);
         
+        print("Привет, сегодня: ");
+        print(new Date());
                 
     }
     
