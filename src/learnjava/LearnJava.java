@@ -136,7 +136,52 @@ public class LearnJava {
         minDouble = 1e-323d;
         System.out.println("minDouble = " + minDouble);
         
+        //Поразрядные операторы
+        int b1 = 0xfefeffff;
+        int b2 = 0xfefefefe;
+        
+        System.out.println("b1:    " + Integer.toBinaryString(b1));
+        System.out.println("b2:    " + Integer.toBinaryString(b2));
+        
+        System.out.println("b1&b2: " + Integer.toBinaryString(b1&b2));
+        System.out.println("b1|b2: " + Integer.toBinaryString(b1|b2));
+        System.out.println("b1^b2: " + Integer.toBinaryString(b1^b2));
+        System.out.println("~b1:   " + Integer.toBinaryString(~b1));
+        
+        //Операторы сдвига
+        System.out.println("Сдвиг в право");
+        int i1;
+        i1 = -2147483648;
+        for (int j = 0; j < 32; j++) {
+            
+            System.out.println(j + ". " + Integer.toBinaryString(i1>>j));
+            
+        }
+        
+        System.out.println("Сдвиг в лево");
+        int i2;
+        i2 = 0b11111111111111111111111111111111;
+        for (int j = 0; j < 32; j++) {
+            
+            System.out.println(j + ". " + Integer.toBinaryString(i2<<j));
+            
+        }
+        
+        //Задание 13 вывод char в двоичном формате
+        printBinaryChar('a');
+        printBinaryChar('b');
+        printBinaryChar('c');
+        printBinaryChar('я');
+        printBinaryChar('1');
+        
         
     }
     
+    static void printBinaryChar (char c){
+        
+        int codeInt;
+        codeInt = c;
+        
+        print("Символ: " + c + " в двоичном формате " + Integer.toBinaryString(codeInt));
+    }
 }///:~
