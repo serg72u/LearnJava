@@ -45,8 +45,8 @@ public class LearnJava {
                 
         StaticTest st1 = new StaticTest();
         StaticTest st2 = new StaticTest();
-        System.out.println("st1.i: " + st1.i);
-        System.out.println("st2.i: " + st2.i);
+        System.out.println("st1.i: " + StaticTest.i);
+        System.out.println("st2.i: " + StaticTest.i);
         
         Incrementable inc = new Incrementable();
         Incrementable.increment();
@@ -174,7 +174,10 @@ public class LearnJava {
         printBinaryChar('я');
         printBinaryChar('1');
         
-        
+        //Задание 14
+        allCompare("Test", "Test1");
+        allCompare("Word", "World");
+        allCompare("a", "b");
     }
     
     static void printBinaryChar (char c){
@@ -184,4 +187,18 @@ public class LearnJava {
         
         print("Символ: " + c + " в двоичном формате " + Integer.toBinaryString(codeInt));
     }
+    
+    /**Задание 14
+     * Написать метод, который получает два аргумента Sring, выполняет с ними все операции логических сравнений и выводит результат.
+     * Для операций == и != так же выполнить проверку equals(). Вызвать метод из main() для нескольких разных объектов String.
+     */
+    static void allCompare (String s1, String s2){
+        print("Сравнение: " + s1 + " и " + s2);
+        print("s1 == s2 is " + s1 == s2);
+        print("s1 != s2 is " + s1 != s2);
+        print("s1.equals(s2) is " + s1.equals(s2));
+         
+    }
+    
+    
 }///:~
