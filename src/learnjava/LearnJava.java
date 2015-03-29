@@ -178,6 +178,11 @@ public class LearnJava {
         allCompare("Test", "Test1");
         allCompare("Word", "World");
         allCompare("a", "b");
+        
+        //Глава управляющие конструкции
+        while(condition())
+            System.out.println("Inside 'while'");
+        System.out.println("Extend 'while'");
     }
     
     static void printBinaryChar (char c){
@@ -200,5 +205,11 @@ public class LearnJava {
          
     }
     
+    //Глава управляющие конструкции. Параграф Циклы.
     
+    static boolean condition(){
+        boolean result = Math.random() < 0.99;
+        System.out.print(result + ", ");
+        return result;
+    }
 }///:~
