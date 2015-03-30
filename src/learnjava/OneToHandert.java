@@ -18,7 +18,12 @@ public class OneToHandert {
            for (int j = 0; j < 10; j++) {
                result = i*10 + j;
                
-                   System.out.print(result + ", ");    
+                   
+                   if (result <= 99) {
+                       System.out.print(result + ", "); 
+               } else {
+                       return;
+               }
            }
        }
         System.out.println("");
