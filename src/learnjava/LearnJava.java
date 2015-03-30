@@ -211,17 +211,17 @@ public class LearnJava {
          * 
          */
         
-//        while (true) {            
-//            num1 = rand.nextInt();
-//            num2 = rand.nextInt();
-//            
-//            if(num1 > num2){
-//                System.out.println("num1: " + num1 + " больше чем num2: " + num2);
-//            }else if(num1 < num2){
-//                System.out.println("num1: " + num1 + " меньше чем num2: " + num2);
-//            }else 
-//                System.out.println("num1: " + num1 + " равно num2: " + num2);
-//        }
+        /*while (true) {
+            num1 = rand.nextInt();
+            num2 = rand.nextInt();
+
+            if(num1 > num2){
+                System.out.println("num1: " + num1 + " больше чем num2: " + num2);
+            }else if(num1 < num2){
+                System.out.println("num1: " + num1 + " меньше чем num2: " + num2);
+            }else
+                System.out.println("num1: " + num1 + " равно num2: " + num2);
+        }*/
     }
     
     static void printBinaryChar (char c){
