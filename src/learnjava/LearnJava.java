@@ -55,8 +55,8 @@ public class LearnJava {
         System.out.println("st2.i: " + StaticTest.i);
         
         System.out.println("Приметивный тип int преобразован в класс: ");
-        Integer i = 100;
-        System.out.println("Переменная i - создана как класс типа Integer и преобразована в тип String с помощю метода toString() i = " + i.toString());
+        Integer int_i = 100;
+        System.out.println("Переменная i - создана как класс типа Integer и преобразована в тип String с помощю метода toString() i = " + int_i.toString());
         
         System.out.println("arg1: " + args[0] + " arg2: " + args[1] + " arg3: " + args[2]);
         
@@ -178,6 +178,12 @@ public class LearnJava {
         allCompare("Test", "Test1");
         allCompare("Word", "World");
         allCompare("a", "b");
+        
+        /**Задание 15
+        * Вывести числа от 1 до 100
+        */
+        OneToHandert oth = new OneToHandert();
+        oth.OneToHandert();
     }
     
     static void printBinaryChar (char c){
@@ -200,5 +206,6 @@ public class LearnJava {
          
     }
     
-    
+   
+            
 }///:~
