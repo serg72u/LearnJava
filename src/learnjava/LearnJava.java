@@ -55,8 +55,8 @@ public class LearnJava {
         System.out.println("st2.i: " + StaticTest.i);
         
         System.out.println("Приметивный тип int преобразован в класс: ");
-        Integer i = 100;
-        System.out.println("Переменная i - создана как класс типа Integer и преобразована в тип String с помощю метода toString() i = " + i.toString());
+        Integer int_i = 100;
+        System.out.println("Переменная i - создана как класс типа Integer и преобразована в тип String с помощю метода toString() i = " + int_i.toString());
         
         System.out.println("arg1: " + args[0] + " arg2: " + args[1] + " arg3: " + args[2]);
         
@@ -179,10 +179,56 @@ public class LearnJava {
         allCompare("Word", "World");
         allCompare("a", "b");
         
+<<<<<<< HEAD
         //Глава управляющие конструкции
         while(condition())
             System.out.println("Inside 'while'");
         System.out.println("Extend 'while'");
+=======
+        /**Задание 15
+        * Вывести числа от 1 до 100
+        */
+        OneToHandert oth = new OneToHandert();
+        oth.OneToHandert();
+        
+        /**
+         * Задание 16
+         * Сгенерировать 25 случайных чисел типа int и сравнить с другим случайно сгенерированным числом 
+         */
+        
+        int num1, num2;
+        Random rand = new Random(47);
+        for (int i = 0; i < 25; i++) {
+            num1 = rand.nextInt();
+            num2 = rand.nextInt();
+            
+            if(num1 > num2){
+                System.out.println("num1: " + num1 + " больше чем num2: " + num2);
+            }else if(num1 < num2){
+                System.out.println("num1: " + num1 + " меньше чем num2: " + num2);
+            }else 
+                System.out.println("num1: " + num1 + " равно num2: " + num2);
+            
+        }
+        
+        /**
+         * Задание 17
+         * изменить задание 2 на выполнение в бесконечном цикле
+         * 
+         */
+        
+        /*while (true) {
+            num1 = rand.nextInt();
+            num2 = rand.nextInt();
+
+            if(num1 > num2){
+                System.out.println("num1: " + num1 + " больше чем num2: " + num2);
+            }else if(num1 < num2){
+                System.out.println("num1: " + num1 + " меньше чем num2: " + num2);
+            }else
+                System.out.println("num1: " + num1 + " равно num2: " + num2);
+        }*/
+>>>>>>> origin/master
     }
     
     static void printBinaryChar (char c){
@@ -205,6 +251,7 @@ public class LearnJava {
          
     }
     
+<<<<<<< HEAD
     //Глава управляющие конструкции. Параграф Циклы.
     
     static boolean condition(){
@@ -212,4 +259,8 @@ public class LearnJava {
         System.out.print(result + ", ");
         return result;
     }
+=======
+   
+            
+>>>>>>> origin/master
 }///:~
