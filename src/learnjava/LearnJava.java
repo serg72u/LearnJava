@@ -179,12 +179,12 @@ public class LearnJava {
         allCompare("Word", "World");
         allCompare("a", "b");
         
-<<<<<<< HEAD
+
         //Глава управляющие конструкции
         while(condition())
             System.out.println("Inside 'while'");
         System.out.println("Extend 'while'");
-=======
+
         /**Задание 15
         * Вывести числа от 1 до 100
         */
@@ -228,7 +228,7 @@ public class LearnJava {
             }else
                 System.out.println("num1: " + num1 + " равно num2: " + num2);
         }*/
->>>>>>> origin/master
+
     }
     
     static void printBinaryChar (char c){
@@ -251,7 +251,7 @@ public class LearnJava {
          
     }
     
-<<<<<<< HEAD
+
     //Глава управляющие конструкции. Параграф Циклы.
     
     static boolean condition(){
@@ -259,8 +259,4 @@ public class LearnJava {
         System.out.print(result + ", ");
         return result;
     }
-=======
-   
-            
->>>>>>> origin/master
 }///:~
